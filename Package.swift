@@ -21,26 +21,19 @@ let package = Package(
                 "Alamofire",
                 "Result"],
             exclude: [
-                "Tests",
-                "Sources/Supporting Files",
-                "Examples"]),
+                "Supporting Files"
+            ]),
         .target(
             name: "ReactiveMoya",
             dependencies: [
                 "Moya",
-                "ReactiveSwift"],
-            exclude: [
-                "Tests",
-                "Sources/Supporting Files",
-                "Examples"]),
+                "ReactiveSwift"]
+        ),
         .target(
             name: "RxMoya",
             dependencies: [
                 "Moya",
-                "RxSwift"],
-            exclude: [
-                "Tests",
-                "Sources/Supporting Files",
-                "Examples"])
+                "RxSwift"]
+        )
     ]
 )
